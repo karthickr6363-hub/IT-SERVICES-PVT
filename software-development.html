@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Services - ELLOWRING SOFTWARE SOLUTIONS</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="logo-ring"></div>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">ELLOWRING</span>
+                        <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="software-training.html">Software Training Program</a></li>
+                            <li><a href="payroll-solution.html">Payroll Solution</a></li>
+                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="software-development.html" class="active">Software Development Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Software Development Services</h1>
+            <p>Building innovative software solutions that drive business growth and digital transformation</p>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="dev-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Transform Your Ideas into Powerful Software Solutions</h2>
+                    <p>We specialize in creating custom software applications that solve complex business challenges. Our team of expert developers combines cutting-edge technology with industry best practices to deliver scalable, secure, and high-performance software solutions tailored to your unique needs.</p>
+                    <div class="tech-stack">
+                        <h3>Our Technology Stack</h3>
+                        <div class="tech-icons">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">TypeScript</span>
+                            <span class="tech-item">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-visual">
+                    <div class="dev-illustration">
+                        <div class="code-editor">
+                            <div class="editor-header">
+                                <div class="editor-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="editor-title">app.js</span>
+                            </div>
+                            <div class="editor-content">
+                                <pre><code>class SoftwareSolution {
+  constructor(client, requirements) {
+    this.client = client;
+    this.requirements = requirements;
+    this.technology = this.selectTech();
+  }
+  
+  develop() {
+    return {
+      frontend: this.buildUI(),
+      backend: this.buildAPI(),
+      database: this.setupDB(),
+      deployment: this.deploy()
+    };
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Services -->
+    <section class="dev-services">
+        <div class="container">
+            <h2>Our Development Services</h2>
+            <div class="services-grid">
+                <div class="dev-service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Application Development</h3>
+                    <p>Build modern, responsive web applications that deliver exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>Progressive Web Apps (PWA)</li>
+                        <li>Single Page Applications (SPA)</li>
+                        <li>E-commerce Platforms</li>
+                        <li>Content Management Systems</li>
+                        <li>Enterprise Web Portals</li>
+                        <li>Real-time Applications</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="dev-service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Create native and cross-platform mobile applications that engage users and drive business growth.</p>
+                    <ul class="service-features">
+                        <li>iOS App Development</li>
+                        <li>Android App Development</li>
+                        <li>Cross-Platform Apps</li>
+                        <li>App Store Optimization</li>
+                        <li>Mobile UI/UX Design</li>
+                        <li>App Maintenance & Support</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                    </div>
+                </div>
+
+                <div class="dev-service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <p>Develop robust, scalable backend systems that power your applications with high performance.</p>
+                    <ul class="service-features">
+                        <li>RESTful API Development</li>
+                        <li>GraphQL APIs</li>
+                        <li>Microservices Architecture</li>
+                        <li>Database Design & Optimization</li>
+                        <li>Cloud Integration</li>
+                        <li>API Documentation & Testing</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="dev-service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Leverage the power of cloud computing to build scalable, secure, and cost-effective solutions.</p>
+                    <ul class="service-features">
+                        <li>Cloud Migration</li>
+                        <li>Cloud-native Applications</li>
+                        <li>Serverless Architecture</li>
+                        <li>DevOps & CI/CD</li>
+                        <li>Containerization</li>
+                        <li>Cloud Security</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Google Cloud</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="dev-service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Integrate artificial intelligence and machine learning capabilities into your software solutions.</p>
+                    <ul class="service-features">
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Predictive Analytics</li>
+                        <li>Recommendation Engines</li>
+                        <li>Chatbot Development</li>
+                        <li>ML Model Deployment</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="dev-service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Build secure software applications with advanced security features and compliance standards.</p>
+                    <ul class="service-features">
+                        <li>Secure Code Development</li>
+                        <li>Security Audits</li>
+                        <li>Penetration Testing</li>
+                        <li>Data Encryption</li>
+                        <li>Authentication Systems</li>
+                        <li>Compliance Management</li>
+                    </ul>
+                    <div class="tech-used">
+                        <span class="tech-tag">OAuth 2.0</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">SSL/TLS</span>
+                        <span class="tech-tag">OWASP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="dev-process">
+        <div class="container">
+            <h2>Our Development Process</h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-icon">💡</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>We understand your business requirements, analyze technical constraints, and create a comprehensive project roadmap.</p>
+                    </div>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-icon">🎨</div>
+                    <div class="step-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Create wireframes, mockups, and interactive prototypes to visualize the final product before development.</p>
+                    </div>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-icon">💻</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>Build the software using agile methodologies with continuous testing and quality assurance.</p>
+                    </div>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-icon">🚀</div>
+                    <div class="step-content">
+                        <h3>Deployment & Support</h3>
+                        <p>Deploy the application to production and provide ongoing maintenance and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="project-showcase">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🏪</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-featured e-commerce platform with real-time inventory management, payment processing, and analytics dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Stripe API</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">📈 50K+ Users</span>
+                            <span class="stat">💰 $2M+ Revenue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🏥</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare Management System</h3>
+                        <p>Comprehensive healthcare management system with patient records, appointment scheduling, and telemedicine capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">🏥 100+ Clinics</span>
+                            <span class="stat">👥 10K+ Patients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">📱</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness Tracking App</h3>
+                        <p>Cross-platform mobile application for fitness tracking with social features, workout plans, and progress analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">GraphQL</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat">⭐ 4.8 Rating</span>
+                            <span class="stat">📱 100K+ Downloads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-dev">
+        <div class="container">
+            <h2>Why Choose Our Development Services?</h2>
+            <div class="choose-content">
+                <div class="choose-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <div class="feature-text">
+                            <h3>Agile Development</h3>
+                            <p>We follow agile methodologies to ensure flexibility, transparency, and rapid delivery of high-quality software.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👨‍💻</div>
+                        <div class="feature-text">
+                            <h3>Expert Team</h3>
+                            <p>Our developers are certified professionals with extensive experience in various technologies and industries.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔧</div>
+                        <div class="feature-text">
+                            <h3>Custom Solutions</h3>
+                            <p>We don't believe in one-size-fits-all. Every solution is tailored to meet your specific business needs.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-text">
+                            <h3>Quality Assurance</h3>
+                            <p>Rigorous testing processes ensure that your software is bug-free, secure, and performs optimally.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Developers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Technical Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Expertise -->
+    <section class="tech-expertise">
+        <div class="container">
+            <h2>Technology Expertise</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">React.js</span>
+                        <span class="tech-item">Vue.js</span>
+                        <span class="tech-item">Angular</span>
+                        <span class="tech-item">TypeScript</span>
+                        <span class="tech-item">Next.js</span>
+                        <span class="tech-item">Redux</span>
+                        <span class="tech-item">Webpack</span>
+                        <span class="tech-item">Sass</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend Technologies</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">C#</span>
+                        <span class="tech-item">Ruby</span>
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">Go</span>
+                        <span class="tech-item">Rust</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Databases</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Redis</span>
+                        <span class="tech-item">Elasticsearch</span>
+                        <span class="tech-item">Cassandra</span>
+                        <span class="tech-item">DynamoDB</span>
+                        <span class="tech-item">Firebase</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">AWS</span>
+                        <span class="tech-item">Azure</span>
+                        <span class="tech-item">Google Cloud</span>
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">Kubernetes</span>
+                        <span class="tech-item">Jenkins</span>
+                        <span class="tech-item">GitLab CI</span>
+                        <span class="tech-item">Terraform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="dev-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Your Next Software Solution?</h2>
+                <p>Let's discuss your project requirements and create a custom software solution that drives your business forward.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services.html" class="btn btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-ring"></div>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">ELLOWRING</span>
+                            <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                        </div>
+                    </div>
+                    <p>Empowering businesses with innovative software solutions and cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="software-training.html">Software Training</a></li>
+                        <li><a href="services.html#payroll-solution">Payroll Solution</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="software-development.html">Software Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📧 info@ellowring.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Tech Street, Silicon Valley, CA 94025</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ELLOWRING SOFTWARE SOLUTIONS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

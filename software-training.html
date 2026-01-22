@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Training Program - ELLOWRING SOFTWARE SOLUTIONS</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="logo-ring"></div>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">ELLOWRING</span>
+                        <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="software-training.html" class="active">Software Training Program</a></li>
+                            <li><a href="payroll-solution.html">Payroll Solution</a></li>
+                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="software-development.html">Software Development Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Software Training Program</h1>
+            <p>Empowering professionals with cutting-edge software skills and industry-relevant expertise</p>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="training-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Transform Your Career with Expert Software Training</h2>
+                    <p>Our comprehensive Software Training Program is designed to equip you with the latest technologies and practical skills needed in today's competitive IT landscape. Whether you're a beginner looking to start your career or a professional aiming to upgrade your skills, we have the right program for you.</p>
+                    <div class="key-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎯</span>
+                            <span>Industry-Driven Curriculum</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👨‍💼</span>
+                            <span>Expert Instructors</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">💼</span>
+                            <span>Hands-on Projects</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📜</span>
+                            <span>Certification</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <div class="training-illustration">
+                        <div class="code-block">
+                            <pre><code>function learnSkills() {
+    return {
+        frontend: ['React', 'Vue', 'Angular'],
+        backend: ['Node.js', 'Python', 'Java'],
+        database: ['SQL', 'MongoDB', 'Redis'],
+        cloud: ['AWS', 'Azure', 'GCP']
+    };
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Tracks -->
+    <section class="training-tracks">
+        <div class="container">
+            <h2>Specialized Training Tracks</h2>
+            <div class="tracks-grid">
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">🌐</div>
+                        <h3>Full-Stack Web Development</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Master both frontend and backend development to build complete web applications.</p>
+                        <ul class="track-topics">
+                            <li>HTML5, CSS3, JavaScript ES6+</li>
+                            <li>React.js / Vue.js / Angular</li>
+                            <li>Node.js, Express.js</li>
+                            <li>MongoDB, PostgreSQL</li>
+                            <li>RESTful APIs & GraphQL</li>
+                            <li>Version Control with Git</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 12 Weeks</span>
+                            <span class="level">📈 Intermediate to Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">📱</div>
+                        <h3>Mobile App Development</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Create native and cross-platform mobile applications for iOS and Android.</p>
+                        <ul class="track-topics">
+                            <li>React Native & Flutter</li>
+                            <li>Swift & iOS Development</li>
+                            <li>Kotlin & Android Development</li>
+                            <li>Mobile UI/UX Design</li>
+                            <li>App Deployment & Publishing</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 10 Weeks</span>
+                            <span class="level">📈 Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">☁️</div>
+                        <h3>Cloud Computing & DevOps</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Learn cloud platforms and DevOps practices for modern software deployment.</p>
+                        <ul class="track-topics">
+                            <li>AWS, Azure, Google Cloud</li>
+                            <li>Docker & Kubernetes</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Monitoring & Logging</li>
+                            <li>Security Best Practices</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 8 Weeks</span>
+                            <span class="level">📈 Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">🤖</div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Dive into artificial intelligence and machine learning with Python.</p>
+                        <ul class="track-topics">
+                            <li>Python for Data Science</li>
+                            <li>TensorFlow & PyTorch</li>
+                            <li>Neural Networks & Deep Learning</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Model Deployment</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 14 Weeks</span>
+                            <span class="level">📈 Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">🔒</div>
+                        <h3>Cybersecurity Fundamentals</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Learn essential cybersecurity skills to protect systems and data.</p>
+                        <ul class="track-topics">
+                            <li>Network Security</li>
+                            <li>Ethical Hacking</li>
+                            <li>Security Auditing</li>
+                            <li>Cryptography</li>
+                            <li>Incident Response</li>
+                            <li>Compliance & Regulations</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 10 Weeks</span>
+                            <span class="level">📈 Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-card">
+                    <div class="track-header">
+                        <div class="track-icon">📊</div>
+                        <h3>Data Science & Analytics</h3>
+                    </div>
+                    <div class="track-content">
+                        <p>Master data analysis, visualization, and statistical modeling.</p>
+                        <ul class="track-topics">
+                            <li>Python & R Programming</li>
+                            <li>Data Visualization Tools</li>
+                            <li>Statistical Analysis</li>
+                            <li>Big Data Technologies</li>
+                            <li>Predictive Modeling</li>
+                            <li>Business Intelligence</li>
+                        </ul>
+                        <div class="track-details">
+                            <span class="duration">⏱️ 12 Weeks</span>
+                            <span class="level">📈 Intermediate to Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Methodology -->
+    <section class="learning-methodology">
+        <div class="container">
+            <h2>Our Learning Approach</h2>
+            <div class="methodology-grid">
+                <div class="method-item">
+                    <div class="method-icon">🎓</div>
+                    <h3>Expert-Led Sessions</h3>
+                    <p>Learn from industry experts with real-world experience and proven teaching methodologies.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">💻</div>
+                    <h3>Hands-on Coding</h3>
+                    <p>Practice coding through interactive exercises, labs, and real-world projects.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">🤝</div>
+                    <h3>Collaborative Learning</h3>
+                    <p>Work in teams, participate in peer reviews, and engage in group discussions.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">📈</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your progress with regular assessments and personalized feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Benefits -->
+    <section class="program-benefits">
+        <div class="container">
+            <h2>Why Choose Our Training Program?</h2>
+            <div class="benefits-content">
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <div class="benefit-text">
+                            <h3>Job Placement Assistance</h3>
+                            <p>Get support with resume building, interview preparation, and job placement opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <div class="benefit-text">
+                            <h3>Industry Certification</h3>
+                            <p>Earn recognized certificates that validate your skills and enhance your resume.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <div class="benefit-text">
+                            <h3>Flexible Learning</h3>
+                            <p>Choose from weekend, weekday, or online batches to fit your schedule.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <div class="benefit-text">
+                            <h3>Lifetime Access</h3>
+                            <p>Get lifetime access to course materials, updates, and alumni community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Placement Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Hiring Partners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.8/5</div>
+                        <div class="stat-label">Student Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Process -->
+    <section class="enrollment-process">
+        <div class="container">
+            <h2>How to Enroll</h2>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Track</h3>
+                        <p>Select the training track that matches your career goals and current skill level.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Consultation Call</h3>
+                        <p>Schedule a free consultation with our advisors to discuss your learning path.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Complete Registration</h3>
+                        <p>Fill out the registration form and choose your preferred batch schedule.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Start Learning</h3>
+                        <p>Begin your journey with orientation and access to learning resources.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <h3>Ready to Transform Your Career?</h3>
+                <p>Join thousands of professionals who have advanced their careers through our training programs.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Started Now</a>
+                    <a href="courses.html" class="btn btn-secondary">View All Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-ring"></div>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">ELLOWRING</span>
+                            <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                        </div>
+                    </div>
+                    <p>Empowering businesses with innovative software solutions and cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="software-training.html">Software Training</a></li>
+                        <li><a href="services.html#payroll-solution">Payroll Solution</a></li>
+                        <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                        <li><a href="services.html#software-development">Software Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📧 info@ellowring.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Tech Street, Silicon Valley, CA 94025</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ELLOWRING SOFTWARE SOLUTIONS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

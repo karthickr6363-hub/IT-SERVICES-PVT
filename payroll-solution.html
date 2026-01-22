@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Solution - ELLOWRING SOFTWARE SOLUTIONS</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23FFD700' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23FFFFFF'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="logo-ring"></div>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">ELLOWRING</span>
+                        <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="dropdown-toggle">Services <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="software-training.html">Software Training Program</a></li>
+                            <li><a href="payroll-solution.html" class="active">Payroll Solution</a></li>
+                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                            <li><a href="software-development.html">Software Development Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Payroll Solution</h1>
+            <p>Streamline your payroll processes with our comprehensive, automated payroll management system</p>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="payroll-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Revolutionize Your Payroll Management</h2>
+                    <p>Our advanced payroll solution automates complex payroll processes, ensures compliance with tax regulations, and provides comprehensive reporting. Save time, reduce errors, and give your HR team the tools they need to manage payroll efficiently.</p>
+                    <div class="key-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <span class="benefit-text">Automated Processing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🔒</span>
+                            <span class="benefit-text">Secure & Compliant</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📊</span>
+                            <span class="benefit-text">Real-time Analytics</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🌍</span>
+                            <span class="benefit-text">Multi-country Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-visual">
+                    <div class="payroll-dashboard">
+                        <div class="dashboard-header">
+                            <h3>Payroll Dashboard</h3>
+                            <div class="dashboard-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">$125,430</span>
+                                    <span class="stat-label">Total Payroll</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">248</span>
+                                    <span class="stat-label">Employees</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="payroll-chart">
+                                <div class="chart-bar" style="height: 70%;"></div>
+                                <div class="chart-bar" style="height: 85%;"></div>
+                                <div class="chart-bar" style="height: 60%;"></div>
+                                <div class="chart-bar" style="height: 90%;"></div>
+                                <div class="chart-bar" style="height: 75%;"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="payroll-features">
+        <div class="container">
+            <h2>Comprehensive Payroll Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Automated Payroll Processing</h3>
+                    <p>Process payroll automatically with configurable pay cycles, deductions, and allowances. Support for hourly, salaried, and contract employees.</p>
+                    <ul class="feature-list">
+                        <li>Multiple Pay Cycles</li>
+                        <li>Automatic Calculations</li>
+                        <li>Overtime & Bonuses</li>
+                        <li>Deduction Management</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧾</div>
+                    <h3>Tax Management & Compliance</h3>
+                    <p>Stay compliant with federal, state, and local tax regulations. Automatic tax calculations and filing support.</p>
+                    <ul class="feature-list">
+                        <li>Tax Calculation Engine</li>
+                        <li>W-2/W-4 Forms</li>
+                        <li>Year-end Reporting</li>
+                        <li>Audit Trail</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Employee Self-Service Portal</h3>
+                    <p>Empower employees with self-service access to pay stubs, tax documents, and personal information management.</p>
+                    <ul class="feature-list">
+                        <li>Online Pay Stubs</li>
+                        <li>Tax Document Access</li>
+                        <li>Leave Management</li>
+                        <li>Profile Updates</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Comprehensive reporting and analytics to gain insights into payroll costs, trends, and compliance metrics.</p>
+                    <ul class="feature-list">
+                        <li>Custom Reports</li>
+                        <li>Cost Analysis</li>
+                        <li>Trend Analytics</li>
+                        <li>Export Capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏦</div>
+                    <h3>Integration Capabilities</h3>
+                    <p>Seamlessly integrate with existing HR systems, accounting software, and banking platforms.</p>
+                    <ul class="feature-list">
+                        <li>HR System Integration</li>
+                        <li>Accounting Software</li>
+                        <li>Bank Direct Deposit</li>
+                        <li>API Access</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Security & Data Protection</h3>
+                    <p>Enterprise-grade security with encryption, role-based access, and regular security audits.</p>
+                    <ul class="feature-list">
+                        <li>Data Encryption</li>
+                        <li>Role-based Access</li>
+                        <li>Security Audits</li>
+                        <li>Backup & Recovery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How Our Payroll Solution Works</h2>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Employee Data Setup</h3>
+                        <p>Import employee information, configure pay rates, and set up deductions and allowances.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Time & Attendance Integration</h3>
+                        <p>Connect with time tracking systems or manually input hours for accurate payroll calculation.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Automated Processing</h3>
+                        <p>System automatically calculates payroll, taxes, and deductions based on configured rules.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Payment & Reporting</h3>
+                        <p>Process payments through direct deposit or checks, and generate comprehensive reports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="payroll-benefits">
+        <div class="container">
+            <h2>Why Choose Our Payroll Solution?</h2>
+            <div class="benefits-content">
+                <div class="benefits-left">
+                    <div class="benefit-highlight">
+                        <div class="benefit-number">90%</div>
+                        <div class="benefit-description">
+                            <h3>Time Savings</h3>
+                            <p>Reduce payroll processing time by up to 90% with automation and streamlined workflows.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-highlight">
+                        <div class="benefit-number">99.9%</div>
+                        <div class="benefit-description">
+                            <h3>Accuracy Rate</h3>
+                            <p>Achieve near-perfect accuracy with automated calculations and built-in validation checks.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-highlight">
+                        <div class="benefit-number">24/7</div>
+                        <div class="benefit-description">
+                            <h3>Employee Access</h3>
+                            <p>Provide employees with 24/7 access to their payroll information through the self-service portal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-right">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"This payroll solution transformed our HR operations. We've reduced processing time from days to hours and eliminated calculation errors completely."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <span>HR Director, TechCorp Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compliance-stats">
+                        <h3>Compliance & Security</h3>
+                        <div class="compliance-items">
+                            <div class="compliance-item">
+                                <span class="compliance-icon">✓</span>
+                                <span>GDPR Compliant</span>
+                            </div>
+                            <div class="compliance-item">
+                                <span class="compliance-icon">✓</span>
+                                <span>SOX Compliant</span>
+                            </div>
+                            <div class="compliance-item">
+                                <span class="compliance-icon">✓</span>
+                                <span>ISO 27001 Certified</span>
+                            </div>
+                            <div class="compliance-item">
+                                <span class="compliance-icon">✓</span>
+                                <span>SOC 2 Type II</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans">
+        <div class="container">
+            <h2>Flexible Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="plan-price">
+                            <span class="price">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Perfect for small businesses</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✓ Up to 10 employees</li>
+                            <li>✓ Basic payroll processing</li>
+                            <li>✓ Tax calculations</li>
+                            <li>✓ Email support</li>
+                            <li>✓ Basic reporting</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Professional</h3>
+                        <div class="plan-price">
+                            <span class="price">$149</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Ideal for growing businesses</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✓ Up to 50 employees</li>
+                            <li>✓ Advanced payroll features</li>
+                            <li>✓ Full tax compliance</li>
+                            <li>✓ Employee self-service</li>
+                            <li>✓ Advanced reporting</li>
+                            <li>✓ Priority support</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="price">Custom</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">For large organizations</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✓ Unlimited employees</li>
+                            <li>✓ Custom workflows</li>
+                            <li>✓ Multi-country support</li>
+                            <li>✓ API access</li>
+                            <li>✓ Custom integrations</li>
+                            <li>✓ Dedicated support</li>
+                        </ul>
+                    </div>
+                    <div class="plan-action">
+                        <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Partners -->
+    <section class="integration-partners">
+        <div class="container">
+            <h2>Seamless Integrations</h2>
+            <p>Our payroll solution integrates with leading business systems</p>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <div class="partner-logo">🏢</div>
+                    <span>QuickBooks</span>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">💼</div>
+                    <span>ADP</span>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">📊</div>
+                    <span>Workday</span>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">🏛️</div>
+                    <span>SAP</span>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">🏦</div>
+                    <span>Oracle</span>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">⚡</div>
+                    <span>Zenefits</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="payroll-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Streamline Your Payroll?</h2>
+                <p>Join hundreds of businesses that have transformed their payroll processes with our solution.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Request Demo</a>
+                    <a href="services.html" class="btn btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-ring"></div>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">ELLOWRING</span>
+                            <span class="logo-tagline">SOFTWARE SOLUTIONS</span>
+                        </div>
+                    </div>
+                    <p>Empowering businesses with innovative software solutions and cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="software-training.html">Software Training</a></li>
+                        <li><a href="payroll-solution.html">Payroll Solution</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="software-development.html">Software Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📧 info@ellowring.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Tech Street, Silicon Valley, CA 94025</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ELLOWRING SOFTWARE SOLUTIONS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
