@@ -3423,7 +3423,39 @@ body {
     .track-card,
     .method-item,
     .benefit-item {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        margin: 0 0.5rem;
+    }
+    
+    .track-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .track-topics li {
+        font-size: 0.85rem;
+        padding: 0.3rem 0;
+        padding-left: 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .track-details span {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .track-header h3 {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
     
     .benefits-stats {
@@ -3551,22 +3583,30 @@ body {
     background: var(--dark-gray);
     border-radius: 12px;
     padding: 2rem;
-    border: 2px solid transparent;
+    border: 1px solid rgba(255, 215, 0, 0.2);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-yellow), var(--yellow-hover));
-    transform: translateY(-100%);
+.service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
 }
 
 .service-card:hover::before {
@@ -3930,6 +3970,14 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .service-image {
+        height: 150px;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
     .process-timeline {
         grid-template-columns: 1fr;
     }
@@ -4169,6 +4217,26 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+.dev-service-card .service-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.dev-service-card .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dev-service-card:hover .service-image img {
+    transform: scale(1.05);
 }
 
 .dev-service-card::before {
@@ -4658,10 +4726,19 @@ body {
 
 .project-image {
     height: 200px;
-    background: linear-gradient(135deg, var(--medium-gray), var(--dark-gray));
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-placeholder {
@@ -4981,7 +5058,71 @@ body {
     .project-card,
     .why-choose-dev .feature-item,
     .tech-category {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        margin: 0 0.3rem;
+    }
+    
+    .dev-service-card .service-image {
+        height: 150px;
+    }
+    
+    .project-image {
+        height: 150px;
+    }
+    
+    .dev-service-card h3 {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .dev-service-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .dev-service-card .service-features li {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+        padding-left: 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .tech-used span {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.3rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .code-editor {
+        margin: 0 0.3rem;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+    
+    .editor-content {
+        padding: 1rem;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .editor-content code {
+        font-size: 0.75rem;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .why-choose-dev .choose-stats {
@@ -5152,6 +5293,26 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+.feature-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image img {
+    transform: scale(1.05);
 }
 
 .feature-card::before {
@@ -5662,6 +5823,10 @@ body {
     .pricing-card,
     .benefit-highlight {
         padding: 1.5rem;
+    }
+    
+    .feature-image {
+        height: 150px;
     }
     
     .dashboard-stats {
