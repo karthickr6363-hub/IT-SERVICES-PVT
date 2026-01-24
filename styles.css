@@ -23,13 +23,32 @@
 
 /* Light Theme Specific Adjustments */
 [data-theme="light"] .navbar {
+    background-color: var(--primary-white);
     border-bottom: 1px solid var(--medium-gray);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .nav-menu a {
+    color: var(--primary-black);
+}
+
+[data-theme="light"] .nav-menu a:hover,
+[data-theme="light"] .nav-menu a.active {
+    color: var(--primary-yellow);
 }
 
 [data-theme="light"] .dropdown-menu {
     background-color: var(--dark-gray);
     border: 1px solid var(--medium-gray);
+}
+
+[data-theme="light"] .dropdown-menu a {
+    color: var(--primary-black);
+}
+
+[data-theme="light"] .dropdown-menu a:hover {
+    background-color: var(--medium-gray);
+    color: var(--primary-yellow);
 }
 
 @media (max-width: 768px) {
@@ -994,7 +1013,7 @@ body {
 .feature-icon svg {
     width: 100%;
     height: 100%;
-    color: var(--primary-yellow);
+    stroke: var(--primary-black);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
 }
@@ -1004,7 +1023,7 @@ body {
 }
 
 .feature-card:hover .feature-icon svg {
-    color: var(--yellow-hover);
+    stroke: var(--primary-black);
     filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
     transform: scale(1.05);
 }
@@ -2131,10 +2150,13 @@ body {
 
     .contact-wrapper {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .contact-info {
         text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .contact-info h2 {
@@ -2148,6 +2170,9 @@ body {
     .contact-item {
         align-items: center;
         text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .contact-item h3 {
@@ -2171,6 +2196,10 @@ body {
     .home-about-text .section-title {
         text-align: center;
         font-size: 2rem;
+    }
+
+    .about-cta {
+        text-align: center;
     }
 
     .about-stats {
@@ -2595,12 +2624,11 @@ body {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 0.75rem;
     }
 
     .btn {
-        width: 100%;
         text-align: center;
         padding: 10px 20px;
         font-size: 0.95rem;
@@ -3904,6 +3932,20 @@ body {
     
     .process-timeline {
         grid-template-columns: 1fr;
+    }
+    
+    .process-step {
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .process-step h3 {
+        text-align: center;
+    }
+    
+    .process-step p {
+        text-align: center;
     }
     
     .case-studies-grid {
@@ -5489,6 +5531,7 @@ body {
     font-size: 2.2rem;
     margin-bottom: 1rem;
     display: block;
+    margin: 0 auto 1rem auto;
     line-height: 1;
     max-width: 100%;
     overflow: hidden;
@@ -5572,6 +5615,12 @@ body {
     
     .pricing-grid {
         grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .pricing-card {
+        max-width: 400px;
+        text-align: center;
     }
     
     .partners-grid {
